@@ -4,7 +4,7 @@
 
 This page is an index of my main engineering projects in computer vision, embedded machine learning, mechanical prototyping and web development. Each project has its own repository with the problem, my personal contribution, the technical approach, the results and the known limitations.
 
-I am looking for an internship between June and August 2027.
+I am looking for an internship between May and July 2027.
 
 ## Projects
 
