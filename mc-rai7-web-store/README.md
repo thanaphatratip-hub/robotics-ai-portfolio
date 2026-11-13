@@ -1,9 +1,20 @@
 # MC.RAI7 Web Store
 
-A web store for a Minecraft server: user accounts, a top-up wallet (virtual points only, no real money), a shop and a leaderboard.
+Full-stack web store for a Minecraft server, with user accounts, a virtual-point wallet, a shop and a leaderboard.
 
-Advanced Computer Programming course, KMITL, October 2025. Team of 2.
-It was built on the course's Next.js + FastAPI + PostgreSQL starter template. The template's original notes are below.
+| | |
+|---|---|
+| **Course** | Advanced Computer Programming for RAI, KMITL |
+| **Date** | October 2025 |
+| **Team** | 2 members |
+
+## Overview
+
+Users register and sign in, top up a wallet with virtual points (no real payments are processed), buy in-game items and packages, and appear on a leaderboard. The frontend is built with Next.js and the backend is a FastAPI REST API backed by PostgreSQL through SQLAlchemy. The whole stack runs with Docker Compose.
+
+The project was built on the course's Next.js + FastAPI + PostgreSQL starter template; the template's original setup notes follow below.
+
+**Tech stack:** Next.js, React, TypeScript, Tailwind CSS, FastAPI, SQLAlchemy, PostgreSQL, Docker Compose
 
 ---
 

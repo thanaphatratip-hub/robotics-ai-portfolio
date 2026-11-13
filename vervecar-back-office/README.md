@@ -1,32 +1,53 @@
-# VerveCar Back Office (AutoDeal IQ)
+# VerveCar Back Office
 
-A live back-office web app for **VerveCar**, a Bangkok dealership that imports new Daihatsu Hijet Cargo vans from Japan.
-It replaced phone calls, LINE messages and paper forms for stock, sales and documents. The interface is in Thai.
+Production back-office web application for VerveCar, a Bangkok dealership that imports new Daihatsu Hijet Cargo vans from Japan.
 
-Sep to Oct 2026, team of 2. **I gathered the requirements with the managing director, built the first proof of concept and built most of the app.**
-The source code is private (it belongs to the business). All the screenshots below use **demo data**.
+| | |
+|---|---|
+| **Client** | VerveCar, Bangkok (real business) |
+| **Date** | September – October 2026 |
+| **Team** | 2 members |
+| **My role** | Requirements, proof of concept and most of the application |
 
-**Stack:** React, TypeScript, Vite (installable as a PWA), Supabase (PostgreSQL, Auth, Storage, Edge Functions), Cloudflare.
+> The source code belongs to the client and is not published. All screenshots use demonstration data. The interface is in Thai.
+
+## Overview
+
+Before this application, stock checks, sales records and customer documents depended on phone calls, LINE messages and paper forms, and the managing director had to answer stock questions throughout the day. The application brings stock, sales, documents and customer follow-up into one system available on desktop and mobile.
+
+## My contribution
+
+- Gathered and defined the requirements with the managing director, and built the first proof of concept.
+- Built most of the application, including the stock board, the sales workflow, document generation, the finance calculator, reminders and data export.
+- Worked on the database schema and the access rules that restrict cost and profit information to the managing director.
 
 ## Features
-- **Stock board:** every car with its status (available, booked, waiting for finance, sold), days in stock, search and filters. Cars in stock over 3 months are flagged.
-- **Sales:** the sales team records a sale and the MD reviews it. A sale is approved automatically when the car and commission are filled in. A checklist shows what data is still missing.
-- **Finance calculator:** down payment as % or baht, 48/60/72-month instalments from editable bank rate tables (VAT included), and a one-tap message to send by LINE.
-- **Documents:** quotation PDF and a printable booking form.
-- **Customer follow-up:** leads marked Hot or Cool, with a private chat between the MD and the salesperson for each lead.
-- **Alerts and history:** reminders for cars sold but not yet registered and for insurance renewals, plus a full status-change history.
-- **Access control:** cost and profit are visible to the MD only. Data can be exported to CSV/JSON with or without costs.
 
-## Result (the MD's estimates)
-- A quotation takes 5 minutes instead of about 20.
-- Checking stock no longer needs a phone call to the MD.
-- Finding a past sale takes under a minute instead of about 10.
+- **Stock management:** every vehicle with its status (available, booked, awaiting finance, sold), time in stock, search and filters; vehicles in stock for more than three months are flagged automatically.
+- **Sales workflow:** sales staff record a sale and the managing director reviews it. A sale is approved automatically once the vehicle and commission are complete, and a checklist shows any missing information.
+- **Finance calculator:** down payment as a percentage or an amount, 48/60/72-month instalments from editable bank rate tables (VAT included), and a ready-to-send LINE message for the customer.
+- **Documents:** quotation PDF and printable booking form.
+- **Customer follow-up:** leads rated Hot or Cool, with a private conversation between the managing director and the salesperson for each lead.
+- **Alerts and audit history:** reminders for vehicles awaiting registration and for insurance renewals, and a complete history of status changes.
+- **Access control and export:** cost and profit visible to the managing director only; CSV/JSON export with or without cost data.
+
+## Results (estimates by the managing director)
+
+| Task | Before | After |
+|---|---|---|
+| Preparing a quotation | ~20 min | ~5 min |
+| Preparing a booking form | ~10 min | ~5 min |
+| Checking stock availability | Phone call to the managing director | Immediate, in the app |
+| Finding a past sale | ~10 min in paper files | Under 1 min |
 
 ## Screenshots
+
 | | |
 |---|---|
 | ![](screenshots/01_home_dashboard_alerts.png) | ![](screenshots/03_stock_list_with_cost_MD_view.png) |
 | ![](screenshots/00_finance_calculator.png) | ![](screenshots/05_followup_private_chat_MD_sales.png) |
 | ![](screenshots/07_booking_form_print.png) | ![](screenshots/10_status_history_audit_log.png) |
 
-More screenshots are in [screenshots/](screenshots).
+Additional screenshots are available in [screenshots/](screenshots).
+
+**Tech stack:** React, TypeScript, Vite (Progressive Web App), Supabase (PostgreSQL, Auth, Storage, Edge Functions), Cloudflare

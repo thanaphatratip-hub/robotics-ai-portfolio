@@ -1,22 +1,46 @@
 # TinyML Machine-Speed Classifier
 
-Recognises how fast a machine's motor is running (**idle, 14k, 15k or 17k RPM**) from its vibration, entirely on a microcontroller.
+Classification of a machine's motor speed from vibration data, running entirely on a microcontroller.
 
-Robotics Laboratory 3, KMITL, January 2026. Team of 2.
+| | |
+|---|---|
+| **Course** | Robotics Laboratory 3 (01416516), KMITL |
+| **Date** | January 2026 |
+| **Team** | 2 members |
+| **My role** | Shared development of the model and deployment; design and fabrication of the sensor mount |
 
-## How it works
-- An **Arduino Nano 33 BLE** fixed to the machine reads its 9-axis IMU (accelerometer, gyroscope, magnetometer) at 100 Hz.
-- **Edge Impulse** turns 2-second windows into spectral features and trains a small classifier.
-- The model is deployed on the board as **int8**: about 1 ms inference, 1.5 KB RAM and 17.8 KB flash. The predictions were checked live over serial.
+## Overview
 
-It reached 100% on its 80/20 test split. That dataset is small and was recorded under controlled conditions, so treat this as a proof of concept, not a field-ready result.
+Monitoring the operating state of a machine from its vibration is the basis of condition monitoring and predictive maintenance. This project classifies a motor into four states (idle, 14,000, 15,000 and 17,000 RPM) using an inertial sensor and a small neural network deployed on the sensor board itself.
 
-## The mount (my CAD and print)
-To get repeatable readings, the board has to sit in exactly the same place every run. I designed a small U-shaped tray (53.8 x 21 x 28 mm) in Fusion 360 and 3D-printed it in PLA. It holds the board flat on the motor.
+## My contribution
 
-| CAD | Printed and mounted |
+- Developed the data pipeline and the classifier together with my teammate.
+- Designed the sensor mount in Fusion 360 and 3D-printed it in PLA. The mount holds the board in the same position on the motor for every recording, which keeps the vibration readings repeatable.
+
+## Technical approach
+
+- **Hardware:** Arduino Nano 33 BLE with a 9-axis IMU (accelerometer, gyroscope and magnetometer), sampled at 100 Hz.
+- **Features:** Edge Impulse spectral-analysis features computed on 2-second windows.
+- **Deployment:** the trained model was quantised to int8 and deployed on the board; predictions were verified live over the serial connection.
+
+| CAD model | Printed mount on the motor |
 |---|---|
 | ![](media/cad_mount.png) | ![](media/printed_mount_on_motor.png) |
 
-## Why it matters
-This is the basic idea behind condition monitoring and predictive maintenance: tell what a machine is doing from its vibration, cheaply, on the device itself.
+## Results
+
+| Metric | Value |
+|---|---|
+| Classes | 4 |
+| Test accuracy (80/20 split) | 100% |
+| Inference time | ~1 ms |
+| RAM usage | ~1.5 KB |
+| Flash usage | ~17.8 KB |
+| Signal processing time | ~51–58 ms |
+
+## Limitations
+
+The dataset is small and was recorded under controlled conditions on a single machine. The 100% accuracy demonstrates feasibility but is not evidence of performance in the field. A larger dataset across different machines, mounting positions and noise conditions would be needed.
+
+**Tech stack:** Arduino Nano 33 BLE, Edge Impulse, C++, Fusion 360, 3D printing
