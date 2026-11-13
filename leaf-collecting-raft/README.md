@@ -4,6 +4,8 @@ A small catamaran raft that collects floating leaves from a canal. It used a cam
 
 Feedback Control course, KMITL, November 2025. Team of 10, split into circuit, hardware, software and maths sub-teams.
 
+![The raft running on the canal](media/raft_on_water.gif)
+
 ## My part (hardware team, 3 of 10)
 - **3D-printed every part** (hull modules, motor casings, mounts, propeller), from CAD made by a teammate.
 - **Sanded** the parts for adhesion, **epoxy-coated** them and **sealed** them with silicone so the raft stayed watertight.

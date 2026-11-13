@@ -4,6 +4,10 @@ Checks in real time whether a worker is wearing a **helmet, safety vest and gogg
 
 Robotics Laboratory 3, KMITL, 2026. Team of 6. **I led the project and did about 70% of the work.**
 
+![Live demo on the Jetson Nano: PASS, then WARNING - Missing: helmet](media/demo_jetson.gif)
+
+*Live on the Jetson Nano: PASS while all three items are worn, then `WARNING - Missing: helmet` once the helmet comes off. The teammate's face is pixelated.*
+
 ## What I did
 - Planned the project and made the key technical decisions.
 - Captured the first part of the dataset and used it as the collection guide for the team.
