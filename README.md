@@ -20,12 +20,11 @@ I am looking for an internship between May and July 2027.
 
 ## How I work
 
-1. **Define.** Decide what "working" means before building: which items must be detected, how fast, or which manual task the user wants gone.
-2. **Build.** Hardware and data are hands-on: datasets, labelling, model training, CAD and 3D printing. For software, I plan the structure and use prompt engineering so AI tools write much of the code.
-3. **Test.** On the real setup: the Jetson with a live camera, a person who was not in the dataset, the dealership's actual daily workflow.
-4. **Fix and ship.** Read the errors, debug, and deploy, including the hosting, database and API connections.
+**Vision and hardware projects.** I do the work myself: collect and label the data, train the model, model and 3D-print the parts, and test on the real setup.
 
-For web apps, AI writes much of the code from my plans and prompts, and my own focus stays on vision, data and hardware. Tools: Claude for code, Gemini for research, ChatGPT for images and maths.
+**Web apps.** I decide what the app needs to do and how the data is structured, then use AI tools, mainly Claude, to write most of the code. I test it, fix problems with the AI's help, and set up the hosting and database.
+
+I can't yet write a full web app on my own without AI. I also use Gemini for research and ChatGPT for images and maths.
 
 ## Contact
 
