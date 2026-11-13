@@ -20,9 +20,11 @@ I am looking for an internship between May and July 2027.
 
 ## How I work
 
-I build software by combining my own engineering with AI tools. I plan the system, design how the data and features fit together, and use prompt engineering to have AI write much of the code. I then read, test and debug it myself, and set up the hosting, database and API connections. I pick the tool for each job: Claude for coding, Gemini for research, ChatGPT for images and maths. The VerveCar app and the sales dashboard were built this way.
+**Software.** I build software by combining my own engineering with AI tools. I plan the system, design how the data and features fit together, and use prompt engineering to have AI write much of the code. I then read, test and debug it myself, and set up the hosting, database and API connections. The VerveCar app and the sales dashboard were built this way.
 
-My own hands-on strengths are on the data and hardware side: collecting and annotating datasets, training and deploying vision models, and CAD modelling and 3D printing.
+**Robotics and vision.** Here the work is mostly hands-on. I collect and label the data, train and deploy the models, design and 3D-print the parts, and get everything working on the real hardware. I use AI for research and for first drafts of code, then adapt and debug that code on the actual setup.
+
+**Still learning.** I can't yet write large applications from scratch without AI, so I make sure I understand and test every part I ship. I pick the tool for each job: Claude for coding, Gemini for research, ChatGPT for images and maths.
 
 ## Contact
 
