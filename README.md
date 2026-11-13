@@ -24,7 +24,7 @@ I am looking for an internship between May and July 2027.
 
 **Web apps.** I decide what the app needs to do and how the data is structured, then use AI tools, mainly Claude, to write most of the code. I test it, fix problems with the AI's help, and set up the hosting and database.
 
-I'm not a web developer by training, so my web apps are built this way. Other tools I use: Gemini for research, ChatGPT for images and maths.
+I'm not a web developer by training, so my web apps are built this way. Other tools I use: Gemini for research, and ChatGPT for images, maths and checking my English, since it isn't my first language.
 
 ## Contact
 
