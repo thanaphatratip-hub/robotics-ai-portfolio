@@ -18,6 +18,10 @@ I am looking for an internship between June and August 2027.
 | [Autonomous Leaf-Collecting Raft](leaf-collecting-raft) | Autonomous raft that collects floating leaves; responsible for fabrication, waterproofing and assembly | 3D printing, epoxy, sealing | 10 members · hardware team |
 | [MC.RAI7 Web Store](mc-rai7-web-store) | Full-stack web store with accounts, virtual-point wallet, shop and leaderboard | Next.js, FastAPI, PostgreSQL | 2 members |
 
+## How I work
+
+I develop software with AI coding assistants, mainly Claude Code. I define the requirements, break the work into steps, write the prompts, and review, test and correct the results. The VerveCar application and the sales dashboard were built this way. My own hands-on strengths are on the data and hardware side: collecting and annotating datasets, training and deploying vision models, and CAD modelling and 3D printing.
+
 ## Contact
 
 - Email: thanaphatra.tip@gmail.com
