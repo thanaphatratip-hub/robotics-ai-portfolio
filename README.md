@@ -20,11 +20,11 @@ I am looking for an internship between May and July 2027.
 
 ## How I work
 
-**Vision and hardware projects.** I do the work myself: collect and label the data, train the model, model and 3D-print the parts, and test on the real setup.
+**Vision and hardware projects.** I collect and label the data, train and deploy the models, design and 3D-print the parts, and test on the real setup. AI tools help with research and first drafts of code.
 
 **Web apps.** I decide what the app needs to do and how the data is structured, then use AI tools, mainly Claude, to write most of the code. I test it, fix problems with the AI's help, and set up the hosting and database.
 
-I can't yet write a full web app on my own without AI. I also use Gemini for research and ChatGPT for images and maths.
+I'm not a web developer by training, so my web apps are built this way. Other tools I use: Gemini for research, ChatGPT for images and maths.
 
 ## Contact
 
